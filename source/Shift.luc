@@ -1,0 +1,16 @@
+module shift (
+    input alufn[2],
+    input a[8],
+    input b[8],
+    output out[8]
+  ) {
+
+  always {
+    case(alufn){
+      2b00:out=a << b;
+      2b01:out=a >> b;
+      2b11:out=$signed (a) >>> b;
+      default: out=0;
+    }
+  }
+}

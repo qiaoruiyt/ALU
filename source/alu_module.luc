@@ -1,0 +1,42 @@
+module alu_module (
+    input clk,  // clock
+    input rst,  // reset
+    input a[8],
+    input b[8],
+    input alufn[6],
+    output out[8]
+  ) {
+
+  always {
+    out = 0;
+    case(alufn){
+      Opcode.ADD:
+        out = a+b;
+      Opcode.SUB:
+        out = a-b;
+      Opcode.AND:
+        out = a&b;
+      Opcode.OR:
+        out = a|b;
+      Opcode.XOR:
+        out = a^b;
+      Opcode.A:
+        out = a;
+      Opcode.SHL:
+        out = a << b;
+      Opcode.SHR:
+        out = a >> b;
+      Opcode.SRA:
+        out = $signed(a) >>> b;
+      Opcode.CMPEQ:
+        out[0] = a == b;
+      Opcode.CMPLT:
+        out[0] = a < b;
+      Opcode.CMPLE:
+        out[0] = a <= b;
+      Opcode.MUL:
+        out = a * b;
+      default: out = 0;
+    }
+  }
+}

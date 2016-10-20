@@ -1,0 +1,138 @@
+global Opcode{
+  const ADD = 6b000000;
+  const SUB = 6b000001;
+  const MUL = 6b000010;
+  const DIV = 6b000011;
+  const AND = 6b011000;
+  const OR = 6b011110;
+  const XOR = 6b010110 ;
+  const A = 6b011010;
+  const SHL = 6b100000;
+  const SHR = 6b100001;
+  const SRA = 6b100011;
+  const CMPEQ = 6b110011;
+  const CMPLT = 6b110101;
+  const CMPLE = 6b110111;
+}
+
+module test_case (
+    input clk,  // clock
+    input rst,  // reset
+    // input a_in[8],
+    // input b_in[8],
+    output a_out[8],
+    output b_out[8],
+    output out[8],  // output result
+    output alufn[6] //led indicates which state we are checking
+  ) 
+  
+  { 
+  
+  sig a[8];
+  sig b[8];
+  sig opcode[6];
+  
+  const TEST_A = 8b00100100;
+  const TEST_B = 8b01001100;
+  const TEST_SHIFT_B = 8b00000010;
+  const TEST_MUL_B = 8b00000011;
+  const ADD_AB = 8b01110000;
+  const SUB_AB = 8b11011000;
+  const AND_AB = 8b00000100;
+  const OR_AB = 8b01101100;
+  const XOR_AB = 8b01101000;
+  const A_AB = TEST_A;
+  const SHL_A = 8b10010000;
+  const SHR_A = 8b00001001;
+  const SRA_A = 8b00001001;
+  const CMPEQ_AB = 8b00000000;
+  const CMPLE_AB = 8b00000001;
+  const CMPLT_AB = 8b00000001;
+  const MUL_AB = 8b10110000;
+  
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    .rst(rst){
+      fsm state = {START,ADD,SUB,AND,OR,XOR,A,SHL,SHR,SRA,CMPEQ,CMPLE,CMPLT,MUL,PASS};
+      blinker myBlinker;
+    }
+  }
+  
+  alu my_alu(.a(a),.b(b),.alufn(opcode));
+  
+  always {
+    opcode = 0;
+    out = my_alu.out;
+    a = TEST_A;
+    b = TEST_B;
+    a_out = a;
+    b_out = b;
+    alufn = opcode;
+    
+    case(state.q){
+      state.START:
+        if (myBlinker.hold_time == 1)
+          state.d = state.ADD;
+      state.ADD:
+        opcode = Opcode.ADD;
+          if (my_alu.out == ADD_AB && myBlinker.hold_time == 1)
+            state.d = state.SUB;
+      state.SUB:
+        opcode = Opcode.SUB;
+          if (my_alu.out == SUB_AB && myBlinker.hold_time == 1)
+            state.d = state.AND;
+      state.AND:
+        opcode = Opcode.AND;
+          if (my_alu.out == AND_AB && myBlinker.hold_time == 1)
+          state.d = state.OR;
+      state.OR:
+        opcode = Opcode.OR;
+          if (my_alu.out == OR_AB && myBlinker.hold_time == 1)
+          state.d = state.XOR;
+      state.XOR:
+        opcode = Opcode.XOR;
+          if (my_alu.out == XOR_AB && myBlinker.hold_time == 1)
+          state.d = state.A;
+      state.A:
+        opcode = Opcode.A;
+          if (my_alu.out == A_AB && myBlinker.hold_time == 1)
+          state.d = state.SHL;
+      state.SHL:
+        opcode = Opcode.SHL;
+        b = TEST_SHIFT_B;
+          if (my_alu.out == SHL_A && myBlinker.hold_time == 1)
+          state.d = state.SHR;
+      state.SHR:
+        opcode = Opcode.SHR;
+        b = TEST_SHIFT_B;
+          if (my_alu.out == SHR_A && myBlinker.hold_time == 1)
+          state.d = state.SRA;
+      state.SRA:
+        opcode = Opcode.SRA;
+        b = TEST_SHIFT_B;
+          if (my_alu.out == SRA_A && myBlinker.hold_time == 1)
+          state.d = state.CMPEQ;
+      state.CMPEQ:
+        opcode = Opcode.CMPEQ;
+          if (my_alu.out == CMPEQ_AB && myBlinker.hold_time == 1)
+          state.d = state.CMPLE;
+      state.CMPLE:
+        opcode = Opcode.CMPLE;
+          if (my_alu.out == CMPLE_AB && myBlinker.hold_time == 1)
+          state.d = state.CMPLT;
+      state.CMPLT:
+        opcode = Opcode.CMPLT;
+          if (my_alu.out == CMPLT_AB && myBlinker.hold_time == 1)
+          state.d = state.MUL;
+      state.MUL:
+        opcode = Opcode.MUL;
+          if (my_alu.out == MUL_AB && myBlinker.hold_time == 1)
+          state.d = state.PASS;
+      state.PASS:
+          out = 8x{myBlinker.blink};
+          alufn = 1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+module alu (
+    input a[8],
+    input b[8],
+    input alufn[6],
+    output out[8]
+  ) {
+  
+  // assemble submodules to alu
+  boolean my_boolean(.a(a),.b(b),.alufn(alufn[3:0]));
+  adder my_adder(.a(a),.b(b),.alufn(alufn[0]));
+  comparator my_comparator(.a(a),.b(b),.alufn(alufn[2:0]));
+  shift my_shift(.a(a),.b(b),.alufn(alufn[1:0]));
+  multiplier my_mul(.a(a),.b(b),.alufn(alufn[1:0]));
+  
+  always {
+    out = 0;
+    case(alufn[5:4]){
+      2b00:
+        if (alufn[1] == 0) out = my_adder.out;
+        else out = my_mul.out;
+      2b01:
+        out = my_boolean.out;
+      2b10:
+        out = my_shift.out;
+      2b11:
+        out = my_comparator.out;
+      default: out = 0;
+    }
+  }
+}

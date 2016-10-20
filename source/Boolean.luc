@@ -1,0 +1,18 @@
+module boolean (
+    input a[8],  //input A
+    input b[8],  //input B
+    input alufn[4],  //ALUFN
+    output out[8]   //Boolean output
+  ) {
+  
+  
+  always {
+      case(alufn){
+        4b1000:out=a & b;
+        4b1110:out=a | b;
+        4b0110:out=a ^ b;
+        4b1010:out=a;
+        default: out=0;
+    }
+  }
+}

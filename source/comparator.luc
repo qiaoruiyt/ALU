@@ -1,0 +1,27 @@
+module comparator (
+    input a[8],
+    input b[8],
+
+    input alufn[3],
+    output out[8]
+    
+  ) {
+  
+  sig z;
+  sig n;
+  sig v;
+   adder adddd(.alufn(alufn[0]),.a(a[7:0]),.b(b[7:0]));
+  
+  always {
+    z=adddd.z;
+    n=adddd.n;
+    v=adddd.v;
+    
+    out = 0;
+    case(alufn[2:1]){
+      2b01:out[0]=z;
+      2b10:out[0]=n^v;
+      2b11:out[0]=z|(n^v);
+      default:out[0]=0;
+  }
+}}
