@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module blinker_3 (
+module blinker_10 (
     input clk,
     input rst,
     output reg blink,

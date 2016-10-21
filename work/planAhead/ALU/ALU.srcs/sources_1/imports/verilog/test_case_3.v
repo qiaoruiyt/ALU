@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module test_case_2 (
+module test_case_3 (
     input clk,
     input rst,
     output reg [7:0] a_out,
@@ -74,7 +74,7 @@ module test_case_2 (
   reg [3:0] M_state_d, M_state_q = START_state;
   wire [1-1:0] M_myBlinker_blink;
   wire [27-1:0] M_myBlinker_hold_time;
-  blinker_3 myBlinker (
+  blinker_10 myBlinker (
     .clk(clk),
     .rst(rst),
     .blink(M_myBlinker_blink),
@@ -82,7 +82,7 @@ module test_case_2 (
   );
   
   wire [8-1:0] M_my_alu_out;
-  alu_4 my_alu (
+  alu_1 my_alu (
     .a(a),
     .b(b),
     .alufn(opcode),
@@ -108,42 +108,49 @@ module test_case_2 (
       end
       ADD_state: begin
         opcode = 6'h00;
+        alufn = opcode;
         if (M_my_alu_out == 8'h70 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = SUB_state;
         end
       end
       SUB_state: begin
         opcode = 6'h01;
+        alufn = opcode;
         if (M_my_alu_out == 8'hd8 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = AND_state;
         end
       end
       AND_state: begin
         opcode = 6'h18;
+        alufn = opcode;
         if (M_my_alu_out == 8'h04 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = OR_state;
         end
       end
       OR_state: begin
         opcode = 6'h1e;
+        alufn = opcode;
         if (M_my_alu_out == 8'h6c && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = XOR_state;
         end
       end
       XOR_state: begin
         opcode = 6'h16;
+        alufn = opcode;
         if (M_my_alu_out == 8'h68 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = A_state;
         end
       end
       A_state: begin
         opcode = 6'h1a;
+        alufn = opcode;
         if (M_my_alu_out == 8'h24 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = SHL_state;
         end
       end
       SHL_state: begin
         opcode = 6'h20;
+        alufn = opcode;
         b = 8'h02;
         if (M_my_alu_out == 8'h90 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = SHR_state;
@@ -151,6 +158,7 @@ module test_case_2 (
       end
       SHR_state: begin
         opcode = 6'h21;
+        alufn = opcode;
         b = 8'h02;
         if (M_my_alu_out == 8'h09 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = SRA_state;
@@ -158,6 +166,7 @@ module test_case_2 (
       end
       SRA_state: begin
         opcode = 6'h23;
+        alufn = opcode;
         b = 8'h02;
         if (M_my_alu_out == 8'h09 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = CMPEQ_state;
@@ -165,24 +174,28 @@ module test_case_2 (
       end
       CMPEQ_state: begin
         opcode = 6'h33;
+        alufn = opcode;
         if (M_my_alu_out == 8'h00 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = CMPLE_state;
         end
       end
       CMPLE_state: begin
         opcode = 6'h37;
+        alufn = opcode;
         if (M_my_alu_out == 8'h01 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = CMPLT_state;
         end
       end
       CMPLT_state: begin
         opcode = 6'h35;
+        alufn = opcode;
         if (M_my_alu_out == 8'h01 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = MUL_state;
         end
       end
       MUL_state: begin
         opcode = 6'h02;
+        alufn = opcode;
         if (M_my_alu_out == 8'hb0 && M_myBlinker_hold_time == 1'h1) begin
           M_state_d = PASS_state;
         end

@@ -28,9 +28,17 @@ module mojo_top_0 (
   
   reg rst;
   
+  wire [8-1:0] M_myalu_out;
+  alu_1 myalu (
+    .a(io_dip[0+7-:8]),
+    .b(io_dip[8+7-:8]),
+    .alufn(io_dip[16+0+5-:6]),
+    .out(M_myalu_out)
+  );
+  
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_1 reset_cond (
+  reset_conditioner_2 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
@@ -39,7 +47,7 @@ module mojo_top_0 (
   wire [8-1:0] M_my_test_b_out;
   wire [8-1:0] M_my_test_out;
   wire [6-1:0] M_my_test_alufn;
-  test_case_2 my_test (
+  test_case_3 my_test (
     .clk(clk),
     .rst(rst),
     .a_out(M_my_test_a_out),
@@ -58,8 +66,8 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    io_led[16+7-:8] = M_my_test_alufn;
-    io_led[8+7-:8] = M_my_test_out;
-    io_led[0+7-:8] = M_my_test_b_out;
+    io_led[16+7-:8] = M_myalu_out;
+    io_led[8+7-:8] = io_dip[8+7-:8];
+    io_led[0+7-:8] = io_dip[0+7-:8];
   end
 endmodule

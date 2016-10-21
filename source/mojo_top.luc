@@ -20,7 +20,7 @@ module mojo_top (
   
   sig rst;                  // reset signal
   
-  //alu myalu(.a(io_dip[0]),.b(io_dip[1]),.alufn(io_dip[2][5:0]));
+  alu myalu(.a(io_dip[0]),.b(io_dip[1]),.alufn(io_dip[2][5:0]));
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -48,12 +48,17 @@ module mojo_top (
     io_sel = 4hf;           // select no digits
     
     // mannually operating alu
-    //io_led[2] = myalu.out;
+    if (io_dip[2][7] == 0){ // left most button to switch mode between self testing and manual testing
+    io_led[2] = myalu.out;  // alu result
+    io_led[1] = io_dip[1];  // input b
+    io_led[0] = io_dip[0];  // input a
+    }
     
-    
-    // test case for alu
-    io_led[2] = my_test.alufn;
-    io_led[1] = my_test.out;
-    io_led[0] = my_test.b_out;
+    // self test circuit for alu
+    else{
+    io_led[2][5:0] = my_test.alufn;  // alufn
+    io_led[1] = my_test.out;         // alu result
+    io_led[0] = my_test.b_out;       // input b (input a is constant as 100100)
+    }
   }
 }

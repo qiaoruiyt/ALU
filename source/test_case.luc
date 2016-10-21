@@ -78,57 +78,70 @@ module test_case (
           state.d = state.ADD;
       state.ADD:
         opcode = Opcode.ADD;
+        alufn = opcode;
           if (my_alu.out == ADD_AB && myBlinker.hold_time == 1)
             state.d = state.SUB;
       state.SUB:
         opcode = Opcode.SUB;
+        alufn = opcode;
           if (my_alu.out == SUB_AB && myBlinker.hold_time == 1)
             state.d = state.AND;
       state.AND:
         opcode = Opcode.AND;
+        alufn = opcode;
           if (my_alu.out == AND_AB && myBlinker.hold_time == 1)
           state.d = state.OR;
       state.OR:
         opcode = Opcode.OR;
+        alufn = opcode;
           if (my_alu.out == OR_AB && myBlinker.hold_time == 1)
           state.d = state.XOR;
       state.XOR:
         opcode = Opcode.XOR;
+        alufn = opcode;
           if (my_alu.out == XOR_AB && myBlinker.hold_time == 1)
           state.d = state.A;
       state.A:
         opcode = Opcode.A;
+        alufn = opcode;
           if (my_alu.out == A_AB && myBlinker.hold_time == 1)
           state.d = state.SHL;
       state.SHL:
         opcode = Opcode.SHL;
+        alufn = opcode;
         b = TEST_SHIFT_B;
           if (my_alu.out == SHL_A && myBlinker.hold_time == 1)
           state.d = state.SHR;
       state.SHR:
         opcode = Opcode.SHR;
+        alufn = opcode;
         b = TEST_SHIFT_B;
           if (my_alu.out == SHR_A && myBlinker.hold_time == 1)
           state.d = state.SRA;
       state.SRA:
         opcode = Opcode.SRA;
+        alufn = opcode;
         b = TEST_SHIFT_B;
           if (my_alu.out == SRA_A && myBlinker.hold_time == 1)
           state.d = state.CMPEQ;
       state.CMPEQ:
         opcode = Opcode.CMPEQ;
+        alufn = opcode;
           if (my_alu.out == CMPEQ_AB && myBlinker.hold_time == 1)
           state.d = state.CMPLE;
       state.CMPLE:
         opcode = Opcode.CMPLE;
+        alufn = opcode;
           if (my_alu.out == CMPLE_AB && myBlinker.hold_time == 1)
           state.d = state.CMPLT;
       state.CMPLT:
         opcode = Opcode.CMPLT;
+        alufn = opcode;
           if (my_alu.out == CMPLT_AB && myBlinker.hold_time == 1)
           state.d = state.MUL;
       state.MUL:
         opcode = Opcode.MUL;
+        alufn = opcode;
           if (my_alu.out == MUL_AB && myBlinker.hold_time == 1)
           state.d = state.PASS;
       state.PASS:

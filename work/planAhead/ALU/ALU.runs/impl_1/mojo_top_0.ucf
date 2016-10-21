@@ -183,8 +183,6 @@ NET "io_dip[0]" PULLDOWN;
 
 CONFIG VCCAUX  = 3.3;
 
-NET "clk" TNM_NET = "clk";
-TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50 %;
 
 NET "clk" LOC = P56;
 NET "clk" IOSTANDARD = LVTTL;

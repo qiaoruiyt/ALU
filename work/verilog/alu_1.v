@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module alu_4 (
+module alu_1 (
     input [7:0] a,
     input [7:0] b,
     input [5:0] alufn,
@@ -14,7 +14,7 @@ module alu_4 (
   
   
   wire [8-1:0] M_my_boolean_out;
-  boolean_5 my_boolean (
+  boolean_4 my_boolean (
     .a(a),
     .b(b),
     .alufn(alufn[0+3-:4]),
@@ -24,7 +24,7 @@ module alu_4 (
   wire [1-1:0] M_my_adder_z;
   wire [1-1:0] M_my_adder_v;
   wire [1-1:0] M_my_adder_n;
-  adder_6 my_adder (
+  adder_5 my_adder (
     .a(a),
     .b(b),
     .alufn(alufn[0+0-:1]),
@@ -34,28 +34,28 @@ module alu_4 (
     .n(M_my_adder_n)
   );
   wire [8-1:0] M_my_comparator_out;
-  comparator_7 my_comparator (
+  comparator_6 my_comparator (
     .a(a),
     .b(b),
     .alufn(alufn[0+2-:3]),
     .out(M_my_comparator_out)
   );
   wire [8-1:0] M_my_shift_out;
-  shift_8 my_shift (
+  shift_7 my_shift (
     .a(a),
     .b(b),
     .alufn(alufn[0+1-:2]),
     .out(M_my_shift_out)
   );
   wire [8-1:0] M_my_mul_out;
-  multiplier_9 my_mul (
+  multiplier_8 my_mul (
     .a(a),
     .b(b),
     .alufn(alufn[0+1-:2]),
     .out(M_my_mul_out)
   );
   wire [8-1:0] M_my_mod_out;
-  mod_10 my_mod (
+  mod_9 my_mod (
     .a(a),
     .b(b),
     .alufn(alufn[0+2-:3]),
