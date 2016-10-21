@@ -4,30 +4,27 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module shift_10 (
-    input [1:0] alufn,
+module multiplier_9 (
     input [7:0] a,
     input [7:0] b,
+    input [1:0] alufn,
     output reg [7:0] out
   );
   
   
   
   always @* begin
-    
-    case (alufn)
-      2'h0: begin
-        out = a << b;
+    out = 1'h0;
+    if (alufn == 2'h2) begin
+      out = a * b;
+    end else begin
+      if (alufn == 2'h3) begin
+        if (b == 1'h0) begin
+          out = 8'hff;
+        end else begin
+          out = a / b;
+        end
       end
-      2'h1: begin
-        out = a >> b;
-      end
-      2'h3: begin
-        out = $signed(a) >>> b;
-      end
-      default: begin
-        out = 1'h0;
-      end
-    endcase
+    end
   end
 endmodule

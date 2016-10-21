@@ -28,16 +28,9 @@ module mojo_top_0 (
   
   reg rst;
   
-  wire [7-1:0] M_seg_segs;
-  reg [4-1:0] M_seg_char;
-  segments_1 seg (
-    .char(M_seg_char),
-    .segs(M_seg_segs)
-  );
-  
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_2 reset_cond (
+  reset_conditioner_1 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
@@ -46,19 +39,13 @@ module mojo_top_0 (
   wire [8-1:0] M_my_test_b_out;
   wire [8-1:0] M_my_test_out;
   wire [6-1:0] M_my_test_alufn;
-  test_case_3 my_test (
+  test_case_2 my_test (
     .clk(clk),
     .rst(rst),
     .a_out(M_my_test_a_out),
     .b_out(M_my_test_b_out),
     .out(M_my_test_out),
     .alufn(M_my_test_alufn)
-  );
-  wire [4-1:0] M_ctr_value;
-  counter_4 ctr (
-    .clk(clk),
-    .rst(rst),
-    .value(M_ctr_value)
   );
   
   always @* begin
@@ -71,11 +58,8 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    io_led[8+7-:8] = M_my_test_a_out;
+    io_led[16+7-:8] = M_my_test_alufn;
+    io_led[8+7-:8] = M_my_test_out;
     io_led[0+7-:8] = M_my_test_b_out;
-    io_led[16+7-:8] = M_my_test_out;
-    M_seg_char = M_ctr_value;
-    io_seg = ~M_seg_segs;
-    io_sel = 4'he;
   end
 endmodule

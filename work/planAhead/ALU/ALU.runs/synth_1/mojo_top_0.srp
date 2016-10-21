@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -53,28 +53,26 @@ Netlist Hierarchy                  : rebuilt
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/adder_8.v" into library work
-Parsing module <adder_8>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Shift_10.v" into library work
-Parsing module <shift_10>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/multiple_divide_11.v" into library work
-Parsing module <multiplier_11>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_9.v" into library work
-Parsing module <comparator_9>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Boolean_7.v" into library work
-Parsing module <boolean_7>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/blinker_5.v" into library work
-Parsing module <blinker_5>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" into library work
-Parsing module <alu_6>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/test_case_3.v" into library work
-Parsing module <test_case_3>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/segments_1.v" into library work
-Parsing module <segments_1>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/reset_conditioner_2.v" into library work
-Parsing module <reset_conditioner_2>.
-Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/counter_4.v" into library work
-Parsing module <counter_4>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/adder_6.v" into library work
+Parsing module <adder_6>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Shift_8.v" into library work
+Parsing module <shift_8>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/multiple_divide_9.v" into library work
+Parsing module <multiplier_9>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mod_10.v" into library work
+Parsing module <mod_10>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_7.v" into library work
+Parsing module <comparator_7>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Boolean_5.v" into library work
+Parsing module <boolean_5>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/blinker_3.v" into library work
+Parsing module <blinker_3>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" into library work
+Parsing module <alu_4>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/test_case_2.v" into library work
+Parsing module <test_case_2>.
+Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
 Analyzing Verilog file "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
@@ -84,32 +82,30 @@ Parsing module <mojo_top_0>.
 
 Elaborating module <mojo_top_0>.
 
-Elaborating module <segments_1>.
+Elaborating module <reset_conditioner_1>.
 
-Elaborating module <reset_conditioner_2>.
+Elaborating module <test_case_2>.
 
-Elaborating module <test_case_3>.
+Elaborating module <blinker_3>.
 
-Elaborating module <blinker_5>.
+Elaborating module <alu_4>.
 
-Elaborating module <alu_6>.
+Elaborating module <boolean_5>.
 
-Elaborating module <boolean_7>.
+Elaborating module <adder_6>.
+WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" Line 32: Assignment to M_my_adder_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" Line 33: Assignment to M_my_adder_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" Line 34: Assignment to M_my_adder_n ignored, since the identifier is never used
 
-Elaborating module <adder_8>.
-WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" Line 33: Assignment to M_my_adder_z ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" Line 34: Assignment to M_my_adder_v ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" Line 35: Assignment to M_my_adder_n ignored, since the identifier is never used
+Elaborating module <comparator_7>.
+WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_7.v" Line 30: Assignment to M_adddd_out ignored, since the identifier is never used
 
-Elaborating module <comparator_9>.
-WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_9.v" Line 30: Assignment to M_adddd_out ignored, since the identifier is never used
+Elaborating module <shift_8>.
 
-Elaborating module <shift_10>.
+Elaborating module <multiplier_9>.
 
-Elaborating module <multiplier_11>.
-WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 55: Assignment to M_my_test_alufn ignored, since the identifier is never used
-
-Elaborating module <counter_4>.
+Elaborating module <mod_10>.
+WARNING:HDLCompiler:1127 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 45: Assignment to M_my_test_a_out ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -125,33 +121,26 @@ WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 49: Output port <alufn> of the instance <my_test> is unconnected or connected to loadless signal.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 64
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 64
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 64
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 64
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 64
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 64
+INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 42: Output port <a_out> of the instance <my_test> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 51
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 51
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 51
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 51
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 51
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 51
     Summary:
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
 
-Synthesizing Unit <segments_1>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/segments_1.v".
-    Found 16x7-bit Read Only RAM for signal <segs>
-    Summary:
-	inferred   1 RAM(s).
-Unit <segments_1> synthesized.
-
-Synthesizing Unit <reset_conditioner_2>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/reset_conditioner_2.v".
+Synthesizing Unit <reset_conditioner_1>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
     Found 4-bit register for signal <M_stage_q>.
     Summary:
 	inferred   4 D-type flip-flop(s).
-Unit <reset_conditioner_2> synthesized.
+Unit <reset_conditioner_1> synthesized.
 
-Synthesizing Unit <test_case_3>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/test_case_3.v".
+Synthesizing Unit <test_case_2>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/test_case_2.v".
     Found 4-bit register for signal <M_state_q>.
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
@@ -170,52 +159,52 @@ Synthesizing Unit <test_case_3>.
     Summary:
 	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
-Unit <test_case_3> synthesized.
+Unit <test_case_2> synthesized.
 
-Synthesizing Unit <blinker_5>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/blinker_5.v".
-    Found 27-bit register for signal <M_holder_q>.
+Synthesizing Unit <blinker_3>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/blinker_3.v".
     Found 26-bit register for signal <M_counter_q>.
+    Found 27-bit register for signal <M_holder_q>.
     Found 26-bit adder for signal <M_counter_d> created at line 25.
     Found 27-bit adder for signal <M_holder_d> created at line 27.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  53 D-type flip-flop(s).
-Unit <blinker_5> synthesized.
+Unit <blinker_3> synthesized.
 
-Synthesizing Unit <alu_6>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v".
-INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" line 28: Output port <z> of the instance <my_adder> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" line 28: Output port <v> of the instance <my_adder> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_6.v" line 28: Output port <n> of the instance <my_adder> is unconnected or connected to loadless signal.
-    Found 8-bit 4-to-1 multiplexer for signal <out> created at line 65.
+Synthesizing Unit <alu_4>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v".
+INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" line 27: Output port <z> of the instance <my_adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" line 27: Output port <v> of the instance <my_adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/alu_4.v" line 27: Output port <n> of the instance <my_adder> is unconnected or connected to loadless signal.
+    Found 8-bit 4-to-1 multiplexer for signal <out> created at line 68.
     Summary:
-	inferred   2 Multiplexer(s).
-Unit <alu_6> synthesized.
+	inferred   3 Multiplexer(s).
+Unit <alu_4> synthesized.
 
-Synthesizing Unit <boolean_7>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Boolean_7.v".
+Synthesizing Unit <boolean_5>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Boolean_5.v".
     Summary:
-Unit <boolean_7> synthesized.
+Unit <boolean_5> synthesized.
 
-Synthesizing Unit <adder_8>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/adder_8.v".
+Synthesizing Unit <adder_6>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/adder_6.v".
     Found 8-bit subtractor for signal <a[7]_b[7]_sub_2_OUT> created at line 28.
     Found 8-bit adder for signal <a[7]_b[7]_add_0_OUT> created at line 25.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-Unit <adder_8> synthesized.
+Unit <adder_6> synthesized.
 
-Synthesizing Unit <comparator_9>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_9.v".
-INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_9.v" line 26: Output port <out> of the instance <adddd> is unconnected or connected to loadless signal.
+Synthesizing Unit <comparator_7>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_7.v".
+INFO:Xst:3210 - "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/comparator_7.v" line 26: Output port <out> of the instance <adddd> is unconnected or connected to loadless signal.
     Found 8-bit 4-to-1 multiplexer for signal <out> created at line 42.
     Summary:
 	inferred   1 Multiplexer(s).
-Unit <comparator_9> synthesized.
+Unit <comparator_7> synthesized.
 
-Synthesizing Unit <shift_10>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Shift_10.v".
+Synthesizing Unit <shift_8>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/Shift_8.v".
     Found 8-bit shifter logical left for signal <a[7]_b[7]_shift_left_0_OUT> created at line 20
     Found 8-bit shifter logical right for signal <a[7]_b[7]_shift_right_1_OUT> created at line 23
     Found 8-bit shifter arithmetic right for signal <a[7]_b[7]_shift_right_2_OUT> created at line 26
@@ -223,34 +212,35 @@ Synthesizing Unit <shift_10>.
     Summary:
 	inferred   4 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
-Unit <shift_10> synthesized.
+Unit <shift_8> synthesized.
 
-Synthesizing Unit <multiplier_11>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/multiple_divide_11.v".
+Synthesizing Unit <multiplier_9>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/multiple_divide_9.v".
     Found 8x8-bit multiplier for signal <n0011> created at line 19.
     Found 8-bit 3-to-1 multiplexer for signal <out> created at line 11.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   2 Multiplexer(s).
-Unit <multiplier_11> synthesized.
+Unit <multiplier_9> synthesized.
 
 Synthesizing Unit <div_8u_8u>.
     Related source file is "".
+    Found 16-bit adder for signal <n0292> created at line 0.
+    Found 16-bit adder for signal <GND_14_o_b[7]_add_1_OUT> created at line 0.
     Found 15-bit adder for signal <n0296> created at line 0.
-    Found 15-bit adder for signal <GND_15_o_b[7]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_14_o_b[7]_add_3_OUT> created at line 0.
     Found 14-bit adder for signal <n0300> created at line 0.
-    Found 14-bit adder for signal <GND_15_o_b[7]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_14_o_b[7]_add_5_OUT> created at line 0.
     Found 13-bit adder for signal <n0304> created at line 0.
-    Found 13-bit adder for signal <GND_15_o_b[7]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_14_o_b[7]_add_7_OUT> created at line 0.
     Found 12-bit adder for signal <n0308> created at line 0.
-    Found 12-bit adder for signal <GND_15_o_b[7]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_14_o_b[7]_add_9_OUT> created at line 0.
     Found 11-bit adder for signal <n0312> created at line 0.
-    Found 11-bit adder for signal <GND_15_o_b[7]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_14_o_b[7]_add_11_OUT> created at line 0.
     Found 10-bit adder for signal <n0316> created at line 0.
-    Found 10-bit adder for signal <GND_15_o_b[7]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_14_o_b[7]_add_13_OUT> created at line 0.
     Found 9-bit adder for signal <n0320> created at line 0.
-    Found 9-bit adder for signal <GND_15_o_b[7]_add_15_OUT> created at line 0.
-    Found 16-bit adder for signal <GND_15_o_b[7]_add_1_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_14_o_b[7]_add_15_OUT> created at line 0.
     Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
     Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
@@ -261,61 +251,61 @@ Synthesizing Unit <div_8u_8u>.
     Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
     Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
     Summary:
-	inferred  15 Adder/Subtractor(s).
+	inferred  16 Adder/Subtractor(s).
 	inferred   9 Comparator(s).
 	inferred  57 Multiplexer(s).
 Unit <div_8u_8u> synthesized.
 
-Synthesizing Unit <counter_4>.
-    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/counter_4.v".
-    Found 28-bit register for signal <M_ctr_q>.
-    Found 28-bit adder for signal <M_ctr_q[27]_GND_16_o_add_0_OUT> created at line 35.
+Synthesizing Unit <mod_10>.
+    Related source file is "D:/aWork/SUTDTerm4/Computational Structure/MojoWorkspace/ALU/work/planAhead/ALU/ALU.srcs/sources_1/imports/verilog/mod_10.v".
+WARNING:Xst:647 - Input <alufn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit subtractor for signal <a[7]_a[7]_sub_4_OUT> created at line 20.
+    Found 8x8-bit multiplier for signal <n0009> created at line 20.
+    Found 8-bit comparator greater for signal <a[7]_b[7]_LessThan_1_o> created at line 17
     Summary:
+	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
-Unit <counter_4> synthesized.
+Unit <mod_10> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 16x7-bit single-port Read Only RAM                    : 1
-# Multipliers                                          : 1
- 8x8-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 20
- 10-bit adder                                          : 2
- 11-bit adder                                          : 2
- 12-bit adder                                          : 2
- 13-bit adder                                          : 2
- 14-bit adder                                          : 2
- 15-bit adder                                          : 2
- 16-bit adder                                          : 1
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 37
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 4
+ 12-bit adder                                          : 4
+ 13-bit adder                                          : 4
+ 14-bit adder                                          : 4
+ 15-bit adder                                          : 4
+ 16-bit adder                                          : 4
  26-bit adder                                          : 1
  27-bit adder                                          : 1
- 28-bit adder                                          : 1
  8-bit addsub                                          : 2
- 9-bit adder                                           : 2
-# Registers                                            : 4
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 4
+# Registers                                            : 3
  26-bit register                                       : 1
  27-bit register                                       : 1
- 28-bit register                                       : 1
  4-bit register                                        : 1
-# Comparators                                          : 9
- 10-bit comparator lessequal                           : 1
- 11-bit comparator lessequal                           : 1
- 12-bit comparator lessequal                           : 1
- 13-bit comparator lessequal                           : 1
- 14-bit comparator lessequal                           : 1
- 15-bit comparator lessequal                           : 1
- 16-bit comparator lessequal                           : 1
- 8-bit comparator lessequal                            : 1
- 9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 68
- 1-bit 2-to-1 multiplexer                              : 56
- 28-bit 2-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 7
+# Comparators                                          : 19
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator lessequal                           : 2
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 126
+ 1-bit 2-to-1 multiplexer                              : 112
+ 8-bit 2-to-1 multiplexer                              : 10
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
 # Logic shifters                                       : 3
@@ -336,60 +326,45 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <blinker_5>.
-The following registers are absorbed into counter <M_holder_q>: 1 register on signal <M_holder_q>.
+Synthesizing (advanced) Unit <blinker_3>.
 The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
-Unit <blinker_5> synthesized (advanced).
+The following registers are absorbed into counter <M_holder_q>: 1 register on signal <M_holder_q>.
+Unit <blinker_3> synthesized (advanced).
 
-Synthesizing (advanced) Unit <counter_4>.
-The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
-Unit <counter_4> synthesized (advanced).
-
-Synthesizing (advanced) Unit <segments_1>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 7-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <char>          |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <segs>          |          |
-    -----------------------------------------------------------------------
-Unit <segments_1> synthesized (advanced).
+Synthesizing (advanced) Unit <mod_10>.
+	Multiplier <Mmult_n0009> in block <mod_10> and adder/subtractor <Msub_a[7]_a[7]_sub_4_OUT> in block <mod_10> are combined into a MAC<Maddsub_n0009>.
+Unit <mod_10> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 16x7-bit single-port distributed Read Only RAM        : 1
+# MACs                                                 : 1
+ 8x8-to-8-bit MAC                                      : 1
 # Multipliers                                          : 1
  7x8-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 10
- 8-bit adder                                           : 1
- 8-bit adder carry in                                  : 7
+# Adders/Subtractors                                   : 18
+ 8-bit adder carry in                                  : 16
  8-bit addsub                                          : 2
-# Counters                                             : 3
+# Counters                                             : 2
  26-bit up counter                                     : 1
  27-bit up counter                                     : 1
- 28-bit up counter                                     : 1
 # Registers                                            : 4
  Flip-Flops                                            : 4
-# Comparators                                          : 9
- 10-bit comparator lessequal                           : 1
- 11-bit comparator lessequal                           : 1
- 12-bit comparator lessequal                           : 1
- 13-bit comparator lessequal                           : 1
- 14-bit comparator lessequal                           : 1
- 15-bit comparator lessequal                           : 1
- 16-bit comparator lessequal                           : 1
- 8-bit comparator lessequal                            : 1
- 9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 67
- 1-bit 2-to-1 multiplexer                              : 56
- 8-bit 2-to-1 multiplexer                              : 7
+# Comparators                                          : 19
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator lessequal                           : 2
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 126
+ 1-bit 2-to-1 multiplexer                              : 112
+ 8-bit 2-to-1 multiplexer                              : 10
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
 # Logic shifters                                       : 3
@@ -407,7 +382,7 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with gray encoding.
+Optimizing FSM <my_test/FSM_0> on signal <M_state_q[1:4]> with gray encoding.
 -------------------
  State | Encoding
 -------------------
@@ -427,42 +402,46 @@ Optimizing FSM <FSM_0> on signal <M_state_q[1:4]> with gray encoding.
  1101  | 1011
  1110  | 1001
 -------------------
-WARNING:Xst:2677 - Node <my_test/myBlinker/M_counter_q_25> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_25> of sequential type is unconnected in block <test_case_2>.
 
 Optimizing unit <mojo_top_0> ...
 
-Optimizing unit <alu_6> ...
+Optimizing unit <test_case_2> ...
 
-Optimizing unit <div_8u_8u> ...
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_10> <my_test/myBlinker/M_counter_q_10> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_11> <my_test/myBlinker/M_counter_q_11> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_12> <my_test/myBlinker/M_counter_q_12> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_13> <my_test/myBlinker/M_counter_q_13> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_14> <my_test/myBlinker/M_counter_q_14> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_15> <my_test/myBlinker/M_counter_q_15> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_20> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_20> <my_test/myBlinker/M_counter_q_20> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_16> <my_test/myBlinker/M_counter_q_16> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_21> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_21> <my_test/myBlinker/M_counter_q_21> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_17> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_17> <my_test/myBlinker/M_counter_q_17> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_22> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_22> <my_test/myBlinker/M_counter_q_22> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_18> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_18> <my_test/myBlinker/M_counter_q_18> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_23> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_23> <my_test/myBlinker/M_counter_q_23> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_19> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_19> <my_test/myBlinker/M_counter_q_19> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_24> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_24> <my_test/myBlinker/M_counter_q_24> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_0> <my_test/myBlinker/M_counter_q_0> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_1> <my_test/myBlinker/M_counter_q_1> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_2> <my_test/myBlinker/M_counter_q_2> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_3> <my_test/myBlinker/M_counter_q_3> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_4> <my_test/myBlinker/M_counter_q_4> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_5> <my_test/myBlinker/M_counter_q_5> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_6> <my_test/myBlinker/M_counter_q_6> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_7> <my_test/myBlinker/M_counter_q_7> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_8> <my_test/myBlinker/M_counter_q_8> 
-INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <my_test/myBlinker/M_holder_q_9> <my_test/myBlinker/M_counter_q_9> 
+Optimizing unit <alu_4> ...
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_0> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_1> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_2> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_3> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_3> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_4> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_4> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_5> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_5> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_6> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_6> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_7> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_7> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_8> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_8> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_9> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_9> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_10> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_11> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_12> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_13> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_13> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_14> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_14> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_20> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_20> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_15> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_15> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_21> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_21> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_16> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_16> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_22> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_22> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_17> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_17> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_23> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_23> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_18> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_18> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_24> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_24> 
+INFO:Xst:2261 - The FF/Latch <my_test/myBlinker/M_counter_q_19> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <my_test/myBlinker/M_holder_q_19> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 3.
+FlipFlop my_test/M_state_q_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop my_test/M_state_q_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop my_test/M_state_q_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop my_test/M_state_q_FSM_FFd4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -474,8 +453,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 38
- Flip-Flops                                            : 38
+# Registers                                            : 39
+ Flip-Flops                                            : 39
 
 =========================================================================
 
@@ -498,20 +477,20 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 206
-#      GND                         : 5
+# BELS                             : 237
+#      GND                         : 4
 #      INV                         : 3
-#      LUT1                        : 53
-#      LUT2                        : 1
-#      LUT3                        : 6
+#      LUT1                        : 50
+#      LUT2                        : 2
+#      LUT3                        : 8
 #      LUT4                        : 23
-#      LUT5                        : 11
-#      LUT6                        : 18
-#      MUXCY                       : 53
+#      LUT5                        : 26
+#      LUT6                        : 41
+#      MUXCY                       : 50
 #      VCC                         : 3
-#      XORCY                       : 30
-# FlipFlops/Latches                : 38
-#      FDR                         : 34
+#      XORCY                       : 27
+# FlipFlops/Latches                : 39
+#      FDR                         : 35
 #      FDS                         : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -519,6 +498,8 @@ Primitive and Black Box Usage:
 #      IBUF                        : 1
 #      OBUF                        : 44
 #      OBUFT                       : 6
+# DSPs                             : 1
+#      DSP48A1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -527,16 +508,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              38  out of  11440     0%  
- Number of Slice LUTs:                  115  out of   5720     2%  
-    Number used as Logic:               115  out of   5720     2%  
+ Number of Slice Registers:              39  out of  11440     0%  
+ Number of Slice LUTs:                  153  out of   5720     2%  
+    Number used as Logic:               153  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    119
-   Number with an unused Flip Flop:      81  out of    119    68%  
-   Number with an unused LUT:             4  out of    119     3%  
-   Number of fully used LUT-FF pairs:    34  out of    119    28%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:    173
+   Number with an unused Flip Flop:     134  out of    173    77%  
+   Number with an unused LUT:            20  out of    173    11%  
+   Number of fully used LUT-FF pairs:    19  out of    173    10%  
+   Number of unique control sets:         3
 
 IO Utilization: 
  Number of IOs:                          87
@@ -544,6 +525,7 @@ IO Utilization:
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -566,7 +548,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 38    |
+clk                                | BUFGP                  | 39    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -577,9 +559,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.668ns (Maximum Frequency: 176.429MHz)
+   Minimum period: 13.926ns (Maximum Frequency: 71.808MHz)
    Minimum input arrival time before clock: 3.526ns
-   Maximum output required time after clock: 6.305ns
+   Maximum output required time after clock: 14.746ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -588,30 +570,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.668ns (frequency: 176.429MHz)
-  Total number of paths / destination ports: 1614 / 71
+  Clock period: 13.926ns (frequency: 71.808MHz)
+  Total number of paths / destination ports: 18746 / 73
 -------------------------------------------------------------------------
-Delay:               5.668ns (Levels of Logic = 5)
-  Source:            ctr/M_ctr_q_1 (FF)
+Delay:               13.926ns (Levels of Logic = 9)
+  Source:            my_test/M_state_q_FSM_FFd4 (FF)
   Destination:       my_test/M_state_q_FSM_FFd4 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: ctr/M_ctr_q_1 to my_test/M_state_q_FSM_FFd4
+  Data Path: my_test/M_state_q_FSM_FFd4 to my_test/M_state_q_FSM_FFd4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              4   0.525   1.259  M_ctr_q_1 (M_ctr_q_1)
-     end scope: 'ctr:M_ctr_q_1'
-     begin scope: 'my_test:M_ctr_q_1'
-     LUT6:I0->O            5   0.254   1.271  M_myBlinker_hold_time[26]_GND_4_o_equal_40_o<26>1 (M_myBlinker_hold_time[26]_GND_4_o_equal_40_o<26>)
-     LUT5:I0->O            5   0.254   0.841  M_myBlinker_hold_time[26]_GND_4_o_equal_40_o<26>6 (M_myBlinker_hold_time[26]_GND_4_o_equal_40_o)
-     LUT6:I5->O            1   0.254   0.682  M_state_q_FSM_FFd4-In4 (M_state_q_FSM_FFd4-In4)
-     LUT6:I5->O            1   0.254   0.000  M_state_q_FSM_FFd4-In15 (M_state_q_FSM_FFd4-In)
+     FDR:C->Q             21   0.525   1.310  M_state_q_FSM_FFd4 (M_state_q_FSM_FFd4)
+     LUT4:I3->O           14   0.254   1.126  M_state_q__n0092<13>1 (_n0092<13>)
+     begin scope: 'my_test/my_alu:b<1>'
+     begin scope: 'my_test/my_alu/my_mod:b<1>'
+     DSP48A1:A1->P4        1   5.220   0.682  Maddsub_n0009 (out<4>)
+     end scope: 'my_test/my_alu/my_mod:out<4>'
+     LUT5:I4->O           11   0.254   1.315  Mmux_out114 (out<4>)
+     end scope: 'my_test/my_alu:out<4>'
+     LUT6:I2->O            1   0.254   0.682  M_state_q_FSM_FFd4-In9_SW0 (N12)
+     LUT6:I5->O            1   0.254   0.790  M_state_q_FSM_FFd4-In9 (M_state_q_FSM_FFd4-In9)
+     LUT6:I4->O            1   0.250   0.682  M_state_q_FSM_FFd4-In10 (M_state_q_FSM_FFd4-In10)
+     LUT6:I5->O            2   0.254   0.000  M_state_q_FSM_FFd4-In11 (M_state_q_FSM_FFd4-In)
      FDR:D                     0.074          M_state_q_FSM_FFd4
     ----------------------------------------
-    Total                      5.668ns (1.615ns logic, 4.053ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                     13.926ns (7.339ns logic, 6.587ns route)
+                                       (52.7% logic, 47.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -636,24 +623,31 @@ Offset:              3.526ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 67 / 15
+  Total number of paths / destination ports: 706 / 9
 -------------------------------------------------------------------------
-Offset:              6.305ns (Levels of Logic = 3)
-  Source:            my_test/M_state_q_FSM_FFd1 (FF)
-  Destination:       io_led<22> (PAD)
+Offset:              14.746ns (Levels of Logic = 8)
+  Source:            my_test/M_state_q_FSM_FFd4 (FF)
+  Destination:       io_led<13> (PAD)
   Source Clock:      clk rising
 
-  Data Path: my_test/M_state_q_FSM_FFd1 to io_led<22>
+  Data Path: my_test/M_state_q_FSM_FFd4 to io_led<13>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             31   0.525   1.933  M_state_q_FSM_FFd1 (M_state_q_FSM_FFd1)
-     LUT5:I0->O            1   0.254   0.681  Mmux_out11 (out<0>)
-     end scope: 'my_test:out<0>'
-     OBUF:I->O                 2.912          io_led_16_OBUF (io_led<16>)
+     FDR:C->Q             21   0.525   1.310  M_state_q_FSM_FFd4 (M_state_q_FSM_FFd4)
+     LUT4:I3->O           14   0.254   1.126  M_state_q__n0092<13>1 (_n0092<13>)
+     begin scope: 'my_test/my_alu:b<1>'
+     begin scope: 'my_test/my_alu/my_mod:b<1>'
+     DSP48A1:A1->P5        1   5.220   0.682  Maddsub_n0009 (out<5>)
+     end scope: 'my_test/my_alu/my_mod:out<5>'
+     LUT6:I5->O           13   0.254   1.528  Mmux_out134 (out<5>)
+     end scope: 'my_test/my_alu:out<5>'
+     LUT5:I0->O            1   0.254   0.681  Mmux_out61 (out<5>)
+     end scope: 'my_test:out<5>'
+     OBUF:I->O                 2.912          io_led_13_OBUF (io_led<13>)
     ----------------------------------------
-    Total                      6.305ns (3.691ns logic, 2.614ns route)
-                                       (58.5% logic, 41.5% route)
+    Total                     14.746ns (9.419ns logic, 5.327ns route)
+                                       (63.9% logic, 36.1% route)
 
 =========================================================================
 
@@ -665,20 +659,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.668|         |         |         |
+clk            |   13.926|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.14 secs
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.27 secs
  
 --> 
 
-Total memory usage is 298700 kilobytes
+Total memory usage is 332556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
-Number of infos    :   32 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

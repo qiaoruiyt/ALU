@@ -1,9 +1,46 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Oct 20 22:06:53 2016
+// Written by: Map P.20131013 on Fri Oct 21 09:59:37 2016
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "3.3";
+COMP "io_sel[1]" LOCATE = SITE "P10" LEVEL 1;
+COMP "io_led[19]" LOCATE = SITE "P21" LEVEL 1;
+COMP "io_sel[2]" LOCATE = SITE "P7" LEVEL 1;
+COMP "io_sel[3]" LOCATE = SITE "P12" LEVEL 1;
+COMP "led[0]" LOCATE = SITE "P134" LEVEL 1;
+COMP "io_led[0]" LOCATE = SITE "P97" LEVEL 1;
+COMP "led[1]" LOCATE = SITE "P133" LEVEL 1;
+COMP "io_led[1]" LOCATE = SITE "P98" LEVEL 1;
+COMP "led[2]" LOCATE = SITE "P132" LEVEL 1;
+COMP "io_led[2]" LOCATE = SITE "P94" LEVEL 1;
+COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
+COMP "led[3]" LOCATE = SITE "P131" LEVEL 1;
+COMP "io_led[3]" LOCATE = SITE "P95" LEVEL 1;
+COMP "led[4]" LOCATE = SITE "P127" LEVEL 1;
+COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
+COMP "io_led[4]" LOCATE = SITE "P92" LEVEL 1;
+COMP "led[5]" LOCATE = SITE "P126" LEVEL 1;
+COMP "io_led[5]" LOCATE = SITE "P93" LEVEL 1;
+COMP "led[6]" LOCATE = SITE "P124" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
+COMP "io_led[6]" LOCATE = SITE "P87" LEVEL 1;
+COMP "led[7]" LOCATE = SITE "P123" LEVEL 1;
+COMP "io_led[7]" LOCATE = SITE "P88" LEVEL 1;
+COMP "io_led[8]" LOCATE = SITE "P84" LEVEL 1;
+COMP "io_led[9]" LOCATE = SITE "P85" LEVEL 1;
+COMP "io_dip(10)" LOCATE = SITE "P105" LEVEL 1;
+COMP "io_dip(11)" LOCATE = SITE "P104" LEVEL 1;
+COMP "io_dip(12)" LOCATE = SITE "P102" LEVEL 1;
+COMP "io_dip(20)" LOCATE = SITE "P67" LEVEL 1;
+COMP "io_dip(13)" LOCATE = SITE "P101" LEVEL 1;
+COMP "io_dip(21)" LOCATE = SITE "P66" LEVEL 1;
+COMP "io_dip(14)" LOCATE = SITE "P100" LEVEL 1;
+COMP "io_dip(22)" LOCATE = SITE "P58" LEVEL 1;
+COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
+COMP "io_dip(15)" LOCATE = SITE "P99" LEVEL 1;
+COMP "io_dip(23)" LOCATE = SITE "P57" LEVEL 1;
+COMP "io_dip(16)" LOCATE = SITE "P79" LEVEL 1;
 COMP "io_dip(17)" LOCATE = SITE "P78" LEVEL 1;
 COMP "io_dip(18)" LOCATE = SITE "P75" LEVEL 1;
 COMP "io_dip(19)" LOCATE = SITE "P74" LEVEL 1;
@@ -48,59 +85,39 @@ COMP "io_led[16]" LOCATE = SITE "P15" LEVEL 1;
 COMP "io_led[17]" LOCATE = SITE "P16" LEVEL 1;
 COMP "io_sel[0]" LOCATE = SITE "P9" LEVEL 1;
 COMP "io_led[18]" LOCATE = SITE "P17" LEVEL 1;
-COMP "io_sel[1]" LOCATE = SITE "P10" LEVEL 1;
-COMP "io_led[19]" LOCATE = SITE "P21" LEVEL 1;
-COMP "io_sel[2]" LOCATE = SITE "P7" LEVEL 1;
-COMP "io_sel[3]" LOCATE = SITE "P12" LEVEL 1;
-COMP "led[0]" LOCATE = SITE "P134" LEVEL 1;
-COMP "io_led[0]" LOCATE = SITE "P97" LEVEL 1;
-COMP "led[1]" LOCATE = SITE "P133" LEVEL 1;
-COMP "io_led[1]" LOCATE = SITE "P98" LEVEL 1;
-COMP "led[2]" LOCATE = SITE "P132" LEVEL 1;
-COMP "io_led[2]" LOCATE = SITE "P94" LEVEL 1;
-COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
-COMP "led[3]" LOCATE = SITE "P131" LEVEL 1;
-COMP "io_led[3]" LOCATE = SITE "P95" LEVEL 1;
-COMP "led[4]" LOCATE = SITE "P127" LEVEL 1;
-COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
-COMP "io_led[4]" LOCATE = SITE "P92" LEVEL 1;
-COMP "led[5]" LOCATE = SITE "P126" LEVEL 1;
-COMP "io_led[5]" LOCATE = SITE "P93" LEVEL 1;
-COMP "led[6]" LOCATE = SITE "P124" LEVEL 1;
-COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
-COMP "io_led[6]" LOCATE = SITE "P87" LEVEL 1;
-COMP "led[7]" LOCATE = SITE "P123" LEVEL 1;
-COMP "io_led[7]" LOCATE = SITE "P88" LEVEL 1;
-COMP "io_led[8]" LOCATE = SITE "P84" LEVEL 1;
-COMP "io_led[9]" LOCATE = SITE "P85" LEVEL 1;
-COMP "io_dip(10)" LOCATE = SITE "P105" LEVEL 1;
-COMP "io_dip(11)" LOCATE = SITE "P104" LEVEL 1;
-COMP "io_dip(12)" LOCATE = SITE "P102" LEVEL 1;
-COMP "io_dip(20)" LOCATE = SITE "P67" LEVEL 1;
-COMP "io_dip(13)" LOCATE = SITE "P101" LEVEL 1;
-COMP "io_dip(21)" LOCATE = SITE "P66" LEVEL 1;
-COMP "io_dip(14)" LOCATE = SITE "P100" LEVEL 1;
-COMP "io_dip(22)" LOCATE = SITE "P58" LEVEL 1;
-COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
-COMP "io_dip(15)" LOCATE = SITE "P99" LEVEL 1;
-COMP "io_dip(23)" LOCATE = SITE "P57" LEVEL 1;
-COMP "io_dip(16)" LOCATE = SITE "P79" LEVEL 1;
-TIMEGRP clk = BEL "my_test/M_state_q_FSM_FFd4" BEL
-        "my_test/M_state_q_FSM_FFd1" BEL "my_test/M_state_q_FSM_FFd3" BEL
-        "my_test/M_state_q_FSM_FFd2" BEL "my_test/myBlinker/M_holder_q_25" BEL
-        "my_test/myBlinker/M_holder_q_26" BEL "clk_BUFGP/BUFG" BEL
-        "ctr/M_ctr_q_0" BEL "ctr/M_ctr_q_1" BEL "ctr/M_ctr_q_2" BEL
-        "ctr/M_ctr_q_3" BEL "ctr/M_ctr_q_4" BEL "ctr/M_ctr_q_5" BEL
-        "ctr/M_ctr_q_6" BEL "ctr/M_ctr_q_7" BEL "ctr/M_ctr_q_8" BEL
-        "ctr/M_ctr_q_9" BEL "ctr/M_ctr_q_10" BEL "ctr/M_ctr_q_11" BEL
-        "ctr/M_ctr_q_12" BEL "ctr/M_ctr_q_13" BEL "ctr/M_ctr_q_14" BEL
-        "ctr/M_ctr_q_15" BEL "ctr/M_ctr_q_16" BEL "ctr/M_ctr_q_17" BEL
-        "ctr/M_ctr_q_18" BEL "ctr/M_ctr_q_19" BEL "ctr/M_ctr_q_20" BEL
-        "ctr/M_ctr_q_21" BEL "ctr/M_ctr_q_22" BEL "ctr/M_ctr_q_23" BEL
-        "ctr/M_ctr_q_24" BEL "ctr/M_ctr_q_25" BEL "ctr/M_ctr_q_26" BEL
-        "ctr/M_ctr_q_27" BEL "reset_cond/M_stage_q_3" BEL
-        "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
-        "reset_cond/M_stage_q_0";
+TIMEGRP clk = BEL "my_test/M_state_q_FSM_FFd1" BEL
+        "my_test/M_state_q_FSM_FFd2" BEL "my_test/M_state_q_FSM_FFd3" BEL
+        "my_test/M_state_q_FSM_FFd4" BEL "my_test/M_state_q_FSM_FFd1_1" BEL
+        "my_test/M_state_q_FSM_FFd2_1" BEL "my_test/M_state_q_FSM_FFd3_1" BEL
+        "my_test/M_state_q_FSM_FFd4_1" BEL "my_test/myBlinker/M_counter_q_24"
+        BEL "my_test/myBlinker/M_counter_q_23" BEL
+        "my_test/myBlinker/M_counter_q_22" BEL
+        "my_test/myBlinker/M_counter_q_21" BEL
+        "my_test/myBlinker/M_counter_q_20" BEL
+        "my_test/myBlinker/M_counter_q_19" BEL
+        "my_test/myBlinker/M_counter_q_18" BEL
+        "my_test/myBlinker/M_counter_q_17" BEL
+        "my_test/myBlinker/M_counter_q_16" BEL
+        "my_test/myBlinker/M_counter_q_15" BEL
+        "my_test/myBlinker/M_counter_q_14" BEL
+        "my_test/myBlinker/M_counter_q_13" BEL
+        "my_test/myBlinker/M_counter_q_12" BEL
+        "my_test/myBlinker/M_counter_q_11" BEL
+        "my_test/myBlinker/M_counter_q_10" BEL
+        "my_test/myBlinker/M_counter_q_9" BEL
+        "my_test/myBlinker/M_counter_q_8" BEL
+        "my_test/myBlinker/M_counter_q_7" BEL
+        "my_test/myBlinker/M_counter_q_6" BEL
+        "my_test/myBlinker/M_counter_q_5" BEL
+        "my_test/myBlinker/M_counter_q_4" BEL
+        "my_test/myBlinker/M_counter_q_3" BEL
+        "my_test/myBlinker/M_counter_q_2" BEL
+        "my_test/myBlinker/M_counter_q_1" BEL
+        "my_test/myBlinker/M_counter_q_0" BEL
+        "my_test/myBlinker/M_holder_q_26" BEL
+        "my_test/myBlinker/M_holder_q_25" BEL "clk_BUFGP/BUFG" BEL
+        "reset_cond/M_stage_q_3" BEL "reset_cond/M_stage_q_2" BEL
+        "reset_cond/M_stage_q_1" BEL "reset_cond/M_stage_q_0";
 TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 SCHEMATIC END;
 

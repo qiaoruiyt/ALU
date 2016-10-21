@@ -4,27 +4,20 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module multiplier_11 (
+module mod_10 (
     input [7:0] a,
     input [7:0] b,
-    input [1:0] alufn,
+    input [2:0] alufn,
     output reg [7:0] out
   );
   
   
   
   always @* begin
-    out = 1'h0;
-    if (alufn == 2'h2) begin
-      out = a * b;
+    if (a < b) begin
+      out = a;
     end else begin
-      if (alufn == 2'h3) begin
-        if (b == 1'h0) begin
-          out = 8'hff;
-        end else begin
-          out = a / b;
-        end
-      end
+      out = a - (a / b) * b;
     end
   end
 endmodule

@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module blinker_5 (
+module blinker_3 (
     input clk,
     input rst,
     output reg blink,
@@ -29,18 +29,18 @@ module blinker_5 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_counter_q <= 1'h0;
+      M_holder_q <= 1'h0;
     end else begin
-      M_counter_q <= M_counter_d;
+      M_holder_q <= M_holder_d;
     end
   end
   
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_holder_q <= 1'h0;
+      M_counter_q <= 1'h0;
     end else begin
-      M_holder_q <= M_holder_d;
+      M_counter_q <= M_counter_d;
     end
   end
   

@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module adder_8 (
+module adder_6 (
     input [7:0] a,
     input [7:0] b,
     input alufn,

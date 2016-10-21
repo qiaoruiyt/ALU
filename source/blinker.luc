@@ -5,8 +5,8 @@ module blinker (
     output hold_time[27]
   ) {
 
-  dff counter[26](.clk(clk), .rst(rst));
-  dff holder[27](.clk(clk), .rst(rst));
+  dff counter[26](.clk(clk), .rst(rst)); // for LED blink
+  dff holder[27](.clk(clk), .rst(rst));  // for time of holding
   
   always {
     blink = counter.q[24];

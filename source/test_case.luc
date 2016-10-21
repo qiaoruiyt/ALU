@@ -13,13 +13,12 @@ global Opcode{
   const CMPEQ = 6b110011;
   const CMPLT = 6b110101;
   const CMPLE = 6b110111;
+  const MOD = 6b000100;
 }
 
 module test_case (
     input clk,  // clock
     input rst,  // reset
-    // input a_in[8],
-    // input b_in[8],
     output a_out[8],
     output b_out[8],
     output out[8],  // output result
@@ -32,10 +31,10 @@ module test_case (
   sig b[8];
   sig opcode[6];
   
+  // test case hardcoded variables
   const TEST_A = 8b00100100;
   const TEST_B = 8b01001100;
   const TEST_SHIFT_B = 8b00000010;
-  const TEST_MUL_B = 8b00000011;
   const ADD_AB = 8b01110000;
   const SUB_AB = 8b11011000;
   const AND_AB = 8b00000100;
@@ -49,18 +48,19 @@ module test_case (
   const CMPLE_AB = 8b00000001;
   const CMPLT_AB = 8b00000001;
   const MUL_AB = 8b10110000;
+  const MOD_AB = 8b00000000;
   
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     .rst(rst){
-      fsm state = {START,ADD,SUB,AND,OR,XOR,A,SHL,SHR,SRA,CMPEQ,CMPLE,CMPLT,MUL,PASS};
-      blinker myBlinker;
+      fsm state = {START,ADD,SUB,AND,OR,XOR,A,SHL,SHR,SRA,CMPEQ,CMPLE,CMPLT,MUL,PASS};  // state machine that stores all opcode cases
+      blinker myBlinker;                                                                // blinker to hold a 1s check time for each state
     }
   }
   
-  alu my_alu(.a(a),.b(b),.alufn(opcode));
+  alu my_alu(.a(a),.b(b),.alufn(opcode)); // connect alu
   
   always {
     opcode = 0;
@@ -71,6 +71,7 @@ module test_case (
     b_out = b;
     alufn = opcode;
     
+    // state machine implementation
     case(state.q){
       state.START:
         if (myBlinker.hold_time == 1)

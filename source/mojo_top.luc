@@ -21,7 +21,6 @@ module mojo_top (
   sig rst;                  // reset signal
   
   //alu myalu(.a(io_dip[0]),.b(io_dip[1]),.alufn(io_dip[2][5:0]));
-  segments seg;
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -29,7 +28,7 @@ module mojo_top (
     reset_conditioner reset_cond;
     .rst(rst){
       test_case my_test;
-      counter ctr (#SIZE(4), #TOP(9), #DIV(24));
+ 
     }
   }
   
@@ -53,13 +52,8 @@ module mojo_top (
     
     
     // test case for alu
-    io_led[1] = my_test.a_out;
+    io_led[2] = my_test.alufn;
+    io_led[1] = my_test.out;
     io_led[0] = my_test.b_out;
-    io_led[2] = my_test.out;
-    
-    seg.char = ctr.value;
- 
-    io_seg = ~seg.segs;   // connect segments to counter
-    io_sel = ~4h1;        // first digit only
   }
 }

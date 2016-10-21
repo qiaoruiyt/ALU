@@ -8,10 +8,10 @@ module multiplier (
 
   always {
     out = 0;
-    if (alufn == 2b10) out = a * b;
-    else if(alufn == 2b11){ 
-      if (b==0) out = 8b11111111;
-      else out = a/b;
+    if (alufn == 2b10) out = a * b;   // multiplication
+    else if(alufn == 2b11){           
+      if (b==0) out = 8b11111111;     // invalid division
+        else out = a/b;               // valid division (integer answer)
     }
   }
 }

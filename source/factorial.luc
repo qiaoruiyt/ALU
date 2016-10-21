@@ -1,0 +1,40 @@
+module factorial ( // unfinished factorial module
+    input clk,
+    input rst,
+    output out[8],
+    input a[8]
+  ) {
+  
+  .clk(clk){
+    .rst(rst){
+      fsm fcfsm = {CHECK,MULTIPLY};
+      dff increments[8];
+      dff answer[8];
+    }
+  }
+  
+  const ONE = 8b00000001;
+  
+  sig trans[8];
+  sig tempa[8];
+  
+  always {
+    trans = 0;
+    tempa = 1;
+    out = answer.q;
+    case(fcfsm.q){
+      fcfsm.CHECK:
+        if (increments.q < a){
+          increments.d = increments.q + 1;
+          trans = answer.q;
+          if (increments.q == tempa)
+          fcfsm.d = fcfsm.MULTIPLY;
+          }
+      fcfsm.MULTIPLY: 
+        answer.d = answer.q * increments.q;
+        tempa = tempa + 1;
+        if (answer.q > trans)
+        fcfsm.d = fcfsm.CHECK;
+    }
+  }
+}

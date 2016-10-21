@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module test_case_3 (
+module test_case_2 (
     input clk,
     input rst,
     output reg [7:0] a_out,
@@ -53,6 +53,8 @@ module test_case_3 (
   
   localparam MUL_AB = 8'hb0;
   
+  localparam MOD_AB = 8'h00;
+  
   localparam START_state = 4'd0;
   localparam ADD_state = 4'd1;
   localparam SUB_state = 4'd2;
@@ -72,7 +74,7 @@ module test_case_3 (
   reg [3:0] M_state_d, M_state_q = START_state;
   wire [1-1:0] M_myBlinker_blink;
   wire [27-1:0] M_myBlinker_hold_time;
-  blinker_5 myBlinker (
+  blinker_3 myBlinker (
     .clk(clk),
     .rst(rst),
     .blink(M_myBlinker_blink),
@@ -80,7 +82,7 @@ module test_case_3 (
   );
   
   wire [8-1:0] M_my_alu_out;
-  alu_6 my_alu (
+  alu_4 my_alu (
     .a(a),
     .b(b),
     .alufn(opcode),

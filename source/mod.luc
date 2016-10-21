@@ -1,0 +1,14 @@
+module mod (
+    input a[8],
+    input b[8],
+    input alufn[3],
+    output out[8]
+  ) {
+
+  always {
+  if (a<b) out=a;
+  else
+    out=a-(a/b)*b;
+      
+  }    
+}

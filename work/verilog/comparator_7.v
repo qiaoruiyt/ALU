@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module comparator_9 (
+module comparator_7 (
     input [7:0] a,
     input [7:0] b,
     input [2:0] alufn,
@@ -23,7 +23,7 @@ module comparator_9 (
   wire [1-1:0] M_adddd_z;
   wire [1-1:0] M_adddd_v;
   wire [1-1:0] M_adddd_n;
-  adder_8 adddd (
+  adder_6 adddd (
     .alufn(alufn[0+0-:1]),
     .a(a[0+7-:8]),
     .b(b[0+7-:8]),
